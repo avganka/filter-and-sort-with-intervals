@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+ul,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.App {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 10px 0 25px 0;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.courses {
+  padding: 10px 0;
+  flex-basis: 80%;
+}
+
+.courses__list {
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.courses__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  border: 2px dashed gray;
+  border-radius: 20px;
+}
+
+.courses__item p {
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.sort {
+  padding: 10px 0;
+  text-align: right;
+}
+
+.filter {
+  padding: 10px 30px 10px 10px;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter p {
+  padding-bottom: 10px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.filter span {
+  padding: 0 5px 0 0;
+  font-size: 0.8rem;
+}
+
+.filter input {
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.filter button {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input,
+select {
+  height: 25px;
+}
